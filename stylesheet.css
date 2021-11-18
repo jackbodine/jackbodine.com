@@ -1,0 +1,285 @@
+@font-face {
+  font-family: 'CascadiaCode';
+  src: url('fonts/CascadiaCode.ttf');
+}
+
+@font-face {
+  font-family: 'karla';
+  src: url('fonts/Karla.ttf');
+}
+
+body {
+  margin: auto;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background: #F7F3ED;
+  -webkit-font-smoothing: antialiased
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+p {
+  font-size: 22px;
+  font-family: karla;
+}
+
+h1 {
+  font-size: 56px;
+  font-family: CascadiaCode;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: CascadiaCode;
+}
+
+#profile {
+  border-radius: 15px;
+  width: 257px;
+  height: 257px;
+  box-shadow: 0px 0px 6px #AAAAAA;
+  background-image: url('pic.jpeg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: -15px;
+  /**margin-left:13px;**/
+}
+
+#card {
+  border-radius: 15px;
+  width: 345px;
+  box-shadow: 0px 0px 6px #AAAAAA;
+  position: relative;
+  transition: all .1s ease-in-out;
+}
+
+#card:hover {
+  transform: scale(1.02, 1.02);
+}
+
+#card .pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#card .blur {
+  width: 100%;
+  height: 111px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+}
+
+#card h1 {
+  left: 23px;
+  bottom: 50px;
+  color: #F7F3ED;
+  position: absolute;
+  font-size: 26px;
+  z-index: 1;
+  font-family: karla;
+}
+
+#card p {
+  left: 23px;
+  width: 297px;
+  bottom: 5px;
+  color: #F7F3ED;
+  position: absolute;
+  font-size: 18px;
+  z-index: 1;
+  font-family: karla;
+}
+
+#footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #F2ECE4;
+  color: #000000;
+  height: 80px;
+  margin-top: 40px;
+}
+
+#announcment {
+  font-size: 18px;
+  margin-top: -22px;
+  left: 0;
+  width: 100%;
+  background-color: #ffaf7a;
+  color: #000000;
+  height: 80px;
+}
+
+#bar {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 5px;
+  background-color: #000000;
+}
+
+#navbar {
+  color: #000000;
+  font-family: karla;
+  text-decoration: none;
+  font-size: 36px;
+  margin: 50px;
+  font-weight: 2px;
+}
+
+#newCard {
+  border-color: #B4AB9F;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #F2ECE3;
+  height: 135px;
+  width: 350px;
+  border-radius: 20px;
+  font-family: karla;
+}
+
+#newCard:hover {
+  box-shadow: 0px 0px 6px #AAAAAA;
+  transition: all .2s ease-in-out;
+}
+
+#newCard h1 {
+  font-family: karla;
+  margin-top: 23px;
+  color: #000000;
+  font-size: 26px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+#newCard p {
+  font-family: karla;
+  color: #000000;
+  font-size: 18px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: -6px;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+#newCard a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#nav_option {
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+#nav_option:hover {
+  text-decoration: underline;
+}
+
+p a:link {
+  color: black;
+  background-color: #F2ECE4;
+}
+
+p a:visited {
+  color: black;
+  background-color: #F2ECE4;
+}
+
+p a:hover {
+  background-color: #b8cff5;
+}
+
+p a:active {
+  background-color: #6084bf;
+}
+
+a {
+  transition: color .1s ease-in-out, background .1s ease-in-out;
+  text-decoration: none;
+}
+
+p a {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 0 4px;
+  margin: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 1.4
+}
+
+#contactStack {
+  margin-top: -20px;
+}
+
+@media only screen and (max-width:1125px) {
+  .content {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  #projectHStack {
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+
+  #secondProjectStack {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .content {
+    max-width: 600px;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #mainHStack {
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+
+  .content {
+    margin-left: -30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  #card p {
+    width: 300px;
+  }
+
+  #card {
+    width: 320px;
+  }
+
+  #contactStack {
+    margin-top: 0px;
+  }
+
+  h1 {
+    font-size: 46px;
+    font-family: Karla;
+  }
+}

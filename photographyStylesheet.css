@@ -1,0 +1,44 @@
+#photoCard {
+  border-radius: 20px;
+  width: 360px;
+  height: 345px;
+  /*box-shadow: 0px 0px 6px #AAAAAA;*/
+  position: relative;
+  transition: all 0.15s ease-in-out;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#photoCard:hover {
+  webkit-filter: blur(0px);
+  /* Chrome, Safari, Opera */
+  filter: blur(0px);
+}
+
+.collection .pic {
+  webkit-filter: blur(2px);
+  /* Chrome, Safari, Opera */
+  filter: blur(2px);
+}
+
+#photoCard .pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border-color: #B4AB9F;
+  border-width: 1px;
+  border-style: solid;
+  object-fit: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: karla;
+  color: F7F3ED;
+  font-weight: bolder;
+  font-size: 30px;
+}
