@@ -1,3 +1,7 @@
+html {
+  zoom: 90%;
+}
+
 @font-face {
   font-family: 'CascadiaCode';
   src: url('fonts/CascadiaCode.ttf');
