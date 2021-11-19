@@ -1,3 +1,33 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #F7F3ED;
+    --text: #000000;
+    --border: #B4AB9F;
+    --bar: #000000;
+    --shade: #F2ECE3;
+    --shadow: #AAAAAA;
+    --select: #E6DBCC;
+    --selected: #B59C7B;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2B2521;
+    --text: #E6CFB3;
+    --bar: #E6CFB3;
+    --border: #3D3328;
+    --shade: #241F1A;
+    --shadow: #0d0d0d;
+    --select: #3D3328;
+    --selected: #5C4F3D;
+  }
+}
+
+h1, h2, p{
+  color: var(--text);
+}
+
 html {
   zoom: 90%;
 }
@@ -16,7 +46,7 @@ body {
   margin: auto;
   font-family: sans-serif;
   min-height: 100vh;
-  background: #F7F3ED;
+  background: var(--background);
   -webkit-font-smoothing: antialiased
 }
 
@@ -44,7 +74,7 @@ h2 {
   border-radius: 20px;
   width: 257px;
   height: 257px;
-  border-color: #B4AB9F;
+  border-color: var(--border);
   border-width: 2px;
   border-style: solid;
   /* box-shadow: 0px 0px 6px #AAAAAA; */
@@ -56,62 +86,12 @@ h2 {
   /**margin-left:13px;**/
 }
 
-#card {
-  border-radius: 15px;
-  width: 345px;
-  box-shadow: 0px 0px 6px #AAAAAA;
-  position: relative;
-  transition: all .1s ease-in-out;
-}
-
-#card:hover {
-  transform: scale(1.02, 1.02);
-}
-
-#card .pic {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  object-fit: cover;
-}
-
-#card .blur {
-  width: 100%;
-  height: 111px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  object-fit: cover;
-  position: absolute;
-  bottom: 0;
-}
-
-#card h1 {
-  left: 23px;
-  bottom: 50px;
-  color: #F7F3ED;
-  position: absolute;
-  font-size: 26px;
-  z-index: 1;
-  font-family: karla;
-}
-
-#card p {
-  left: 23px;
-  width: 297px;
-  bottom: 5px;
-  color: #F7F3ED;
-  position: absolute;
-  font-size: 18px;
-  z-index: 1;
-  font-family: karla;
-}
-
 #footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #F2ECE4;
-  color: #000000;
+  background-color: var(--shade);
+  color: var(--text);
   height: 80px;
   margin-top: 40px;
 }
@@ -122,7 +102,7 @@ h2 {
   left: 0;
   width: 100%;
   background-color: #ffaf7a;
-  color: #000000;
+  color: var(--text);
   height: 80px;
 }
 
@@ -131,11 +111,11 @@ h2 {
   left: 0px;
   width: 100%;
   height: 5px;
-  background-color: #000000;
+  background-color: var(--bar);
 }
 
 #navbar {
-  color: #000000;
+  color: var(--text);
   font-family: karla;
   text-decoration: none;
   font-size: 36px;
@@ -144,10 +124,10 @@ h2 {
 }
 
 #newCard {
-  border-color: #B4AB9F;
+  border-color: var(--border);
   border-width: 1px;
   border-style: solid;
-  background-color: #F2ECE3;
+  background-color: var(--shade);
   height: 135px;
   width: 350px;
   border-radius: 20px;
@@ -155,14 +135,14 @@ h2 {
 }
 
 #newCard:hover {
-  box-shadow: 0px 0px 6px #AAAAAA;
+  box-shadow: 0px 0px 6px var(--shadow);
   transition: all .2s ease-in-out;
 }
 
 #newCard h1 {
   font-family: karla;
   margin-top: 23px;
-  color: #000000;
+  color: var(--text);
   font-size: 26px;
   font-weight: bold;
   margin-left: 25px;
@@ -170,7 +150,7 @@ h2 {
 
 #newCard p {
   font-family: karla;
-  color: #000000;
+  color: var(--text);
   font-size: 18px;
   margin-left: 25px;
   margin-right: 25px;
@@ -183,7 +163,7 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color: black;
+  color: var(--text);
 }
 
 #newCard a {
@@ -202,21 +182,21 @@ a:active {
 }
 
 p a:link {
-  color: black;
-  background-color: #F2ECE4;
+  color: var(--text);
+  background-color: var(--shade);
 }
 
 p a:visited {
-  color: black;
-  background-color: #F2ECE4;
+  color: var(--text);
+  background-color: var(--shade);
 }
 
 p a:hover {
-  background-color: #b8cff5;
+  background-color: var(--select);
 }
 
 p a:active {
-  background-color: #6084bf;
+  background-color: var(--selected);
 }
 
 a {
