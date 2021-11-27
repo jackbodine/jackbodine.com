@@ -1,0 +1,34 @@
+@media (prefers-color-scheme: light) {
+    :root {
+      --background: #F7F3ED;
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #2B2521;
+    }
+  }
+
+@font-face {
+    font-family: 'karla';
+    src: url('fonts/Karla.ttf');
+  }
+
+#article p {
+    margin-top: -10px;
+}
+
+#article a {
+    font-family: karla;
+    font-size: 22px;
+    text-decoration: underline;
+    background-color: var(--background);
+}
+
+#article {
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+

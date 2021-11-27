@@ -38,3 +38,19 @@
   border-style: solid;
   object-fit: cover;
 }
+
+@media only screen and (max-width:767px) {
+  html, body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  #photoCard {
+    width: 240px;
+    height: 230px;
+  }
+  .secondary{
+    visibility: collapse;
+  }
+
+}
