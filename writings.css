@@ -24,11 +24,17 @@
     font-size: 22px;
     text-decoration: underline;
     background-color: var(--background);
+    margin-left:-5px;
 }
 
 #article {
     max-width: 60%;
     margin: auto;
     margin-bottom: 5px;
+}
+
+#article h3 {
+  font-family: karla;
+  margin-top: -10px;
 }
 
