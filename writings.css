@@ -1,12 +1,14 @@
 @media (prefers-color-scheme: light) {
     :root {
       --background: #F7F3ED;
+      --text: #000000;
     }
   }
   
   @media (prefers-color-scheme: dark) {
     :root {
       --background: #2B2521;
+      --text: #E6CFB3;
     }
   }
 
@@ -36,5 +38,6 @@
 #article h3 {
   font-family: karla;
   margin-top: -10px;
+  color: var(--text);
 }
 
